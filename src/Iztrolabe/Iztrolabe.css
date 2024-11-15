@@ -25,6 +25,7 @@
 
 .star-with-mutagen {
   position: relative;
+  cursor: pointer;
 }
 
 .star-with-mutagen::before {

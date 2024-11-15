@@ -143,6 +143,20 @@ export const Izpalace = ({
       style={{ gridArea: `g${index}` }}
       onMouseEnter={() => onFocused?.(index)}
       onMouseLeave={() => onFocused?.(undefined)}
+      onClick={
+				(evnet) => {
+          const target = event.target as HTMLElement;
+          if(target !== event.currentTarget) {
+            // 获取直接文本节点的内容
+            const directText = Array.from(target.childNodes)
+              .filter(node => node.nodeType === Node.TEXT_NODE)
+              .map(node => node.textContent?.trim())
+              .join('');
+              
+            console.log('explain target:', directText);
+          }
+				}
+			}
     >
       <div className={classNames("iztro-palace-major")}>
         {palace.majorStars.map((star) => (

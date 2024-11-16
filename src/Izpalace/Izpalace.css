@@ -92,9 +92,18 @@
   text-align: left;
 }
 
+.iztro-palace-lft24 div {
+  cursor: pointer;
+}
+
 .iztro-palace-rgt24 {
   text-align: right;
 }
+
+.iztro-palace-rgt24 div {
+  cursor: pointer;
+}
+
 .iztro-palace-name {
   cursor: pointer;
   text-wrap: nowrap;
